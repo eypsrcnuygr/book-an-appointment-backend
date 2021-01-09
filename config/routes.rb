@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :appointments
   mount_devise_token_auth_for 'User', at: 'auth'
 
-  mount_devise_token_auth_for 'Teacher', at: 'auth'
+  mount_devise_token_auth_for 'Teacher', at: 'auth_teacher'
   as :teacher do
     # Define routes for Teacher within this block.
   end
