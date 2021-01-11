@@ -19,7 +19,8 @@ class TeachersController < ApplicationController
 
     render json: {
       appointments: cur_appointments,
-      users_mails: cur_appointments_users
+      users_mails: cur_appointments_users,
+      cur_teacher: current_teacher
     }
   end
 end
