@@ -4,8 +4,15 @@ class AppointmentsController < ApplicationController
   # GET /appointments
   def index
     @appointments = Appointment.all
+    @teachers = []
+    @users = []
 
-    render json: @appointments
+    @appointments.each do |element|
+      @teachers.push(element.teacher)
+      @users.push(element.user)
+    end
+
+    render json: { appointments: @appointments, teachers: @teachers, users: @users }
   end
 
   # GET /appointments/1
