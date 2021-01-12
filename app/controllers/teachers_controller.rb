@@ -1,5 +1,3 @@
-require 'set'
-
 class TeachersController < ApplicationController
   def index
     teacher = Teacher.all
