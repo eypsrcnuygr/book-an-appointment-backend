@@ -23,7 +23,7 @@ To get this project up and running locally, you must already have ruby installed
 
 **Step 1**<br>
 Navigate through the local folder where you want to clone the repository and write<br>
-``` git clone git@github.com:eypsrcnuygr/book-an-appointment-backend.git``. It will clone the repo to your local folder.<br>
+```git clone git@github.com:eypsrcnuygr/book-an-appointment-backend.git```. It will clone the repo to your local folder.<br>
 or with https<br>
 ```git clone git@github.com:eypsrcnuygr/book-an-appointment-backend.git```.<br>
 **Step 2**<br>
