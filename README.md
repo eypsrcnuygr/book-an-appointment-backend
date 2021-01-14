@@ -55,7 +55,7 @@ Enjoy<br>
 - ```POST /auth``` creates new user with email, password and password_confirmation params.
 - ```POST /auth/sign_in``` logs in users with email, password as params and uid, acces-token and client on the request header.
 - ```POST /auth_teacher``` creates new teacher with email, password and password_confirmation params.
-- ```POST /auth/sign_in``` logs in teachers with email, password as params and uid, acces-token and client on the request header.
+- ```POST /auth_teacher/sign_in``` logs in teachers with email, password as params and uid, acces-token and client on the request header.
 - ```GET /auth/validate_token``` validates the user's token, it expects the uid, acces-token and client with it's headers.
 - ```GET /auth_teacher/validate_token``` validates the teacher's token, it expects the uid, acces-token and client with it's headers.
 
