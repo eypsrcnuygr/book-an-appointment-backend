@@ -44,20 +44,20 @@ Run ```rails s -p 3001``` to run the server and go to 'http://localhost:3001/' a
 Enjoy<br>
 
 ## Features
-**Current working endpoints for not auth users!**
+**Current working endpoints for registrations**
 - ```GET /``` shows the appointments and related users and the teachers.
 - ```GET /teachers/``` shows all the teachers.
 - ```GET /show/:id``` shows the specific teacher and teacher's appointments and the related users.
 - ```GET /appointments``` shows the appointments and related users and the teachers as root does.
 - ```GET /appointments/:id``` shows the specific appointment.
 
-**Current working endpoints for auth users!**
-- ```POST /auth``` creates new user with email, password and password_confirmation params.
-- ```POST /auth/sign_in``` logs in users with email, password as params and uid, acces-token and client on the request header.
-- ```POST /auth_teacher``` creates new teacher with email, password and password_confirmation params.
-- ```POST /auth_teacher/sign_in``` logs in teachers with email, password as params and uid, acces-token and client on the request header.
-- ```GET /auth/validate_token``` validates the user's token, it expects the uid, acces-token and client with it's headers.
-- ```GET /auth_teacher/validate_token``` validates the teacher's token, it expects the uid, acces-token and client with it's headers.
+**Current working endpoints for showing the information**
+- ```POST /auth/``` creates new user with email, password and password_confirmation params.
+- ```POST /auth/sign_in/``` logs in users with email, password as params and uid, acces-token and client on the request header.
+- ```POST /auth_teacher/``` creates new teacher with email, password and password_confirmation params.
+- ```POST /auth_teacher/sign_in/``` logs in teachers with email, password as params and uid, acces-token and client on the request header.
+- ```GET /auth/validate_token/``` validates the user's token, it expects the uid, acces-token and client with it's headers.
+- ```GET /auth_teacher/validate_token/``` validates the teacher's token, it expects the uid, acces-token and client with it's headers.
 
 ## Test
 - There are 3 models test file. Those tests check the associations and the validities.
