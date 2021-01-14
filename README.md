@@ -83,7 +83,7 @@ Give a ⭐️ if you like this project!
 
 ## Issues
 
-For issues [check](https://github.com/eypsrcnuygr/easy-pay-2/issues).
+For issues [check](https://github.com/eypsrcnuygr/book-an-appointment-backend/issues).
 
 ## Acknowledgments
 
