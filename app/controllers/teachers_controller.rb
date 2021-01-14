@@ -1,7 +1,6 @@
 class TeachersController < ApplicationController
-
   before_action :authenticate_any!
-  
+
   def index
     teacher = Teacher.all
     render json: {
