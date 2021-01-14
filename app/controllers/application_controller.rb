@@ -3,6 +3,14 @@ class ApplicationController < ActionController::API
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  def authenticate_any!
+    if teacher_signed_in?
+      true
+    else
+      authenticate_user!
+    end
+  end
+
   protected
 
   def configure_permitted_parameters
