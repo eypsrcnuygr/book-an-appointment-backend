@@ -7,10 +7,10 @@
 
 # Rails.application.config.middleware.insert_before 0, Rack::Cors do
 #   allow do
-#     origins 'example.com'
-#
+#     origins 'http://localhost:3000/'
+
 #     resource '*',
-#       headers: :any,
+#       headers: 'Access-Control-Allow-Origin',
 #       methods: [:get, :post, :put, :patch, :delete, :options, :head]
 #   end
 # end
